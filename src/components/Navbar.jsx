@@ -27,7 +27,7 @@ function Navbar() {
 
   return (
     <div>
-      <header className="absolute z-30 w-full px-20 pt-16">
+      <header className="absolute z-10 w-full px-20 pt-16">
         <nav className="flex items-center justify-between">
           <a href="/" className="font-chronicle text-3xl font-bold">
             MNTN
@@ -67,10 +67,12 @@ function Navbar() {
       {isDrawerOpen && (
         <div className="absolute right-0 top-0 z-10 h-full w-full translate-x-0 bg-black/50 px-20 pt-16 backdrop-blur-sm transition-all md:hidden md:-translate-x-full">
           <ul className="absolute right-0 top-0 z-50 flex h-screen w-56 flex-col items-center gap-8 bg-gray-100 p-8 text-black">
-            <IoCloseOutline
+            <button
               onClick={toggleDrawer}
-              className="mb-8 mt-10 cursor-pointer text-3xl"
-            />
+              className="mb-8 mt-0 cursor-pointer text-3xl"
+            >
+              <IoCloseOutline />
+            </button>
             {navlinks.map((nav) => {
               return (
                 <li key={nav.label}>
