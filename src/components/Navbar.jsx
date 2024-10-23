@@ -17,7 +17,7 @@ function Navbar() {
     },
   ];
 
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  // const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   return (
     <>
       <header className="absolute z-10 w-full px-20 pt-16">
@@ -60,7 +60,7 @@ function Navbar() {
           </button>
         </nav>
       </header>
-      {isDrawerOpen && (
+      {/* {isDrawerOpen && (
         <div className="absolute left-0 top-0 h-screen w-screen bg-white text-black md:hidden">
           <ul className="flex flex-col items-center bg-gray-100 p-4">
             {navlinks.map((nav) => {
@@ -84,7 +84,7 @@ function Navbar() {
             </div>
           </a>
         </div>
-      )}
+      )} */}
     </>
   );
 }
